@@ -14,7 +14,7 @@ st.set_page_config(
 df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
 
 # --- Barra Lateral (Filtros) ---
-st.sidebar.header("🔍 Filtros")
+st.sidebar.header("Filtros")
 
 # Filtro de Ano
 anos_disponiveis = sorted(df['ano'].unique())
@@ -42,7 +42,7 @@ df_filtrado = df[
 ]
 
 # --- Conteúdo Principal ---
-st.title("🎲 Dashboard de Análise de Salários na Área de Dados")
+st.title("Dashboard de Análise de Salários na Área de Dados")
 st.markdown("Explore os dados salariais na área de dados nos últimos anos. Utilize os filtros à esquerda para refinar sua análise.")
 
 # --- Métricas Principais (KPIs) ---
